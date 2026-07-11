@@ -364,8 +364,101 @@ nav a{
 }
 
 /* RESPONSIVO */
-@media(max-width:900px){
+
+@media (max-width:992px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    nav{
+        justify-content:center;
+    }
+
+    .hero{
+        padding-top:140px;
+    }
+
     .contact-grid{
         grid-template-columns:1fr;
     }
+
+}
+
+@media (max-width:768px){
+
+    .hero{
+        min-height:auto;
+        padding:160px 25px 80px;
+    }
+
+    .hero-content span{
+        font-size:12px;
+    }
+
+    .hero-content h1{
+        font-size:2.8rem;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+        max-width:320px;
+        text-align:center;
+    }
+
+    .about-page,
+    .team-page,
+    .contact{
+        padding:130px 25px 60px;
+    }
+
+    .about-page span,
+    .contact-hero .tag{
+        font-size:18px;
+    }
+
+    .contact-hero h1{
+        font-size:2.3rem;
+    }
+
+    .logo{
+        font-size:22px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    nav{
+        gap:15px;
+    }
+
+    nav a{
+        font-size:14px;
+    }
+
+    .hero-content h1{
+        font-size:2.2rem;
+    }
+
+    .about-page h1{
+        font-size:2rem;
+    }
+
+    .contact-hero h1{
+        font-size:2rem;
+    }
+
 }
