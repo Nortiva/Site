@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- Feito por Matheus - NORTIVA STUDIO -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portal | Nortiva Studio</title>
+<meta name="description" content="Acompanhe lançamentos, melhorias, correções de bugs e novidades dos serviços da Nortiva.">
+<meta name="theme-color" content="#14161D">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Portal | Nortiva Studio">
+<meta property="og:description" content="Lançamentos, melhorias, correções e novidades dos serviços da Nortiva.">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="portal.css">
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="brand" aria-label="Nortiva Studio"><img src="assets/logo-branco.png" alt="nortiva STUDIO" width="160" height="40"></a>
+    <a href="index.html" class="nav-back">← Voltar ao site</a>
+  </div>
+</header>
+
+<main>
+<section class="hero page hero-journal">
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <p class="eyebrow">Portal</p>
+      <h1>Todas as novidades da <em>Nortiva.</em></h1>
+      <p class="lead">Acompanhe lançamentos, melhorias, correções de bugs e novidades dos nossos serviços.</p>
+    </div>
+  </div>
+</section>
+
+<section class="journal" aria-label="Linha do tempo de novidades">
+  <div class="journal-in">
+    <div class="rail" aria-hidden="true"></div>
+
+    <div class="entries">
+
+      <!-- Para adicionar uma novidade, copie um bloco <article class="entry rv"> abaixo e cole no TOPO da lista.
+           Categorias (data-category + classe da cor): novo, atualizacao, atencao, correcao, seguranca, institucional, cloud, design -->
+
+
+      <article class="entry rv" data-category="atualizacao" id="atualizacao-2026-09-30">
+        <div class="entry-node" aria-hidden="true"><span class="entry-node-dot"></span></div>
+        <div class="entry-card">
+          <header class="entry-head">
+            <span class="cat-badge"><span class="cat-dot"></span>Atualização</span>
+            <time class="entry-date" datetime="2026-09-30">30 set 2026</time>
+          </header>
+          <h2 class="entry-title">Uma nova identidade para a Nortiva Studio.</h2>
+          <p class="entry-desc">Reformulamos nossa marca para representar melhor quem somos e o que queremos construir. Essa mudança chega ao nosso visual, à nossa comunicação e à forma como apresentamos nossas soluções.</p>
+          <p class="entry-desc">A identidade anterior passa a fazer parte da nossa história, abrindo espaço para uma Nortiva mais madura e alinhada aos próximos passos.</p>
+          <p class="entry-desc">Essa mudança já faz parte de tudo o que estamos preparando. Em breve, novos projetos vão mostrar a Nortiva na prática.</p>
+          <div class="entry-image"><img src="assets/images/identidade.png" alt="Fundação da Nortiva" loading="lazy"></div>
+          <footer class="entry-footer">
+            <span class="entry-author">Equipe Nortiva</span>
+          </footer>
+        </div>
+      </article>
+
+
+      <article class="entry rv" data-category="institucional" id="fundacao-2026-06-10">
+        <div class="entry-node" aria-hidden="true"><span class="entry-node-dot"></span></div>
+        <div class="entry-card">
+          <header class="entry-head">
+            <span class="cat-badge"><span class="cat-dot"></span>Fundação</span>
+            <time class="entry-date" datetime="2026-06-10">10 jun 2026</time>
+          </header>
+          <h2 class="entry-title">Bem-vindo à Nortiva!</h2>
+          <p class="entry-desc">Nascemos com a missão de criar soluções digitais modernas, unindo design, tecnologia e inovação para ajudar empresas a crescer no ambiente digital. Este será o nosso espaço oficial para compartilhar novidades, lançamentos, melhorias, correções e a evolução dos nossos produtos e serviços.</p>
+          <div class="entry-image"><img src="assets/images/nortiva.png" alt="Fundação da Nortiva" loading="lazy"></div>
+          <footer class="entry-footer">
+            <span class="tag">#Nortiva</span>
+            <span class="tag">#Tecnologia</span>
+            <span class="tag">#Instituição</span>
+            <span class="entry-author">Equipe Nortiva</span>
+          </footer>
+        </div>
+      </article>
+
+      <div class="entries-end">
+        <span class="entries-end-dot" aria-hidden="true"></span>
+        <p>Você chegou ao início do jornal.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<a href="https://github.com/Nortiva" target="_blank" rel="noopener noreferrer" class="github-float" aria-label="GitHub da Nortiva">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.54-3.87-1.54-.53-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.25 3.32.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.73.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.41-5.25 5.69.41.35.78 1.04.78 2.1v3.11c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+</a>
+
+<footer class="foot foot-mini">
+  <div class="wrap">
+    <div class="foot-bot">
+      <small>© <span id="ano">2026</span> Nortiva Studio. Todos os direitos reservados.</small>
+      <a href="index.html" class="up">Ir para o site <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

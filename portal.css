@@ -1,0 +1,74 @@
+/* Feito por Matheus - NORTIVA STUDIO
+   Portal (jornal de novidades). Usa as variáveis e componentes do style.css. */
+
+/* cabeçalho da página: mais baixo que o hero padrão */
+.hero.page.hero-journal{min-height:0;padding-top:clamp(120px,16vw,160px)}
+.hero.page.hero-journal .hero-in{padding-bottom:clamp(40px,6vw,72px)}
+
+/* linha do tempo */
+.journal{padding:clamp(24px,5vw,56px) 0 clamp(72px,11vw,130px);background:#0f1117}
+.journal-in{position:relative;width:min(860px,100% - 40px);margin-inline:auto}
+.rail{position:absolute;left:11px;top:8px;bottom:8px;width:2px;border-radius:2px;background:linear-gradient(180deg,var(--blue),rgba(36,75,255,.15) 85%,transparent)}
+.entries{display:grid;gap:1.6rem}
+
+/* cada entrada define a própria cor por categoria */
+.entry{--c:125,148,255;position:relative;padding-left:46px}
+.entry[data-category=atualizacao]{--c:45,212,191}
+.entry[data-category=atencao]{--c:255,184,77}
+.entry[data-category=correcao]{--c:74,222,128}
+.entry[data-category=seguranca]{--c:167,139,250}
+.entry[data-category=institucional]{--c:144,153,173}
+.entry[data-category=cloud]{--c:56,189,248}
+.entry[data-category=design]{--c:244,114,182}
+
+.entry-node{position:absolute;left:0;top:1.5rem;width:24px;height:24px;border-radius:50%;background:var(--ink);border:2px solid rgb(var(--c));display:grid;place-items:center}
+.entry-node-dot{width:8px;height:8px;border-radius:50%;background:rgb(var(--c))}
+
+.entry-card{background:#1a1d27;border:1px solid var(--line);border-radius:var(--r);padding:clamp(1.3rem,3.5vw,2rem);transition:border-color .3s}
+.entry-card:hover{border-color:rgba(var(--c),.55)}
+
+.entry-head{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem .8rem}
+.cat-badge{display:inline-flex;align-items:center;gap:.5rem;padding:.3rem .8rem;border-radius:99px;font-size:.85rem;font-weight:700;color:rgb(var(--c));background:rgba(var(--c),.12);border:1px solid rgba(var(--c),.3)}
+.cat-dot{width:7px;height:7px;border-radius:50%;background:rgb(var(--c))}
+.entry-version{font-size:.82rem;font-weight:600;color:var(--mute);padding:.2rem .6rem;border:1px solid var(--line);border-radius:8px}
+.entry-version:empty{display:none}
+.entry-date{margin-left:auto;font-size:.88rem;color:var(--mute);font-weight:500}
+
+.entry-title{max-width:none;margin:1rem 0 .7rem;font-size:clamp(1.3rem,3.2vw,1.7rem);line-height:1.2}
+.entry-desc{color:#c7cddb;margin-bottom:1rem;max-width:68ch}
+.entry-desc:last-child{margin-bottom:0}
+.entry-link{color:#7d94ff;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.entry-link:hover{color:#a3b3ff}
+
+.entry-image{margin:1.2rem 0;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0f1117}
+.entry-image[hidden]{display:none}
+.entry-image img{width:100%;height:auto}
+.entry-video{position:relative;aspect-ratio:16/9;margin:1.2rem 0 0;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0f1117}
+.entry-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+.entry-content{margin:1.2rem 0;padding:1.2rem 1.3rem;border-radius:14px;background:#0f1117;border:1px solid var(--line)}
+.entry-content-title{font-size:.95rem;margin-bottom:.7rem;color:#dfe3ee}
+.change-list{display:grid;gap:.55rem}
+.change-list li{display:flex;gap:.7rem;color:#c7cddb;font-size:.96rem}
+.check{flex:none;color:rgb(var(--c));font-weight:800}
+
+.entry-footer{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .6rem;margin-top:1.3rem;padding-top:1rem;border-top:1px solid var(--line)}
+.tag{font-size:.85rem;font-weight:600;color:#7d94ff}
+.entry-author{margin-left:auto;font-size:.88rem;color:var(--mute);font-weight:500}
+
+.entries-end{display:flex;flex-direction:column;align-items:center;gap:.7rem;padding-top:1.4rem;color:var(--mute);font-size:.92rem;position:relative}
+.entries-end-dot{width:10px;height:10px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 5px rgba(36,75,255,.2)}
+
+/* botão do GitHub */
+.github-float{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:40;width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:#1a1d27;border:1px solid rgba(255,255,255,.18);transition:background .25s,border-color .25s,transform .25s}
+.github-float svg{width:22px;height:22px;fill:#dfe3ee}
+.github-float:hover{background:var(--blue);border-color:var(--blue);transform:translateY(-2px)}
+
+@media(max-width:560px){
+  .rail{left:7px}
+  .entry{padding-left:34px}
+  .entry-node{width:16px;height:16px;top:1.6rem}
+  .entry-node-dot{width:6px;height:6px}
+  .entry-date{margin-left:0;width:100%}
+  .entry-author{margin-left:0;width:100%}
+}
