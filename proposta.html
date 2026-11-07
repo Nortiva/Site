@@ -75,6 +75,7 @@ body[data-tone="blue"] :focus-visible { outline-color: #fff; }
 /* ---------- Topo ---------- */
 .top { padding: 24px var(--pad) 0; }
 
+.logo-link { display: inline-block; }
 .logo { width: 112px; transition: filter .6s ease; }
 body[data-tone="blue"] .logo { filter: brightness(0) invert(1); }
 
@@ -257,7 +258,9 @@ h2 { font-size: clamp(36px, 6.2vw, 76px); }
 <body>
 
   <header class="top">
-    <img class="logo" src="/assets/logo-grafite-recortada.png" width="1499" height="382" alt="Nortiva">
+    <a class="logo-link" href="/" aria-label="Nortiva, ir para o site">
+      <img class="logo" src="/assets/logo-grafite-recortada.png" width="1499" height="382" alt="Nortiva">
+    </a>
   </header>
 
   <main class="stage" id="stage" aria-roledescription="apresentação">
@@ -337,6 +340,10 @@ h2 { font-size: clamp(36px, 6.2vw, 76px); }
           Falar no WhatsApp
         </a>
 
+        <p class="contact-lines">
+          <a href="https://wa.me/5538998337049" target="_blank" rel="noopener noreferrer">+55 38 99833-7049</a>
+          <a href="https://www.instagram.com/thenortiva/" target="_blank" rel="noopener noreferrer">@thenortiva</a>
+        </p>
       </div>
     </section>
 
