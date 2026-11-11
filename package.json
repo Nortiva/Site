@@ -1,0 +1,6 @@
+{
+  "name": "nortiva-site",
+  "private": true,
+  "type": "module",
+  "description": "Site institucional da Nortiva (estático, hospedado na Vercel)"
+}

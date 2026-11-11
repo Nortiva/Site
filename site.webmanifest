@@ -1,0 +1,23 @@
+{
+  "name": "Nortiva",
+  "short_name": "Nortiva",
+  "description": "Agentes de IA, automações e sistemas para empresas.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#F4F6FA",
+  "theme_color": "#F4F6FA",
+  "icons": [
+    {
+      "src": "/assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
