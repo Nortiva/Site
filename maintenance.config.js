@@ -1,1 +1,1 @@
-export const MANUTENCAO = true;
+export const MANUTENCAO = false;
